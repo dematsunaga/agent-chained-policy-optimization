@@ -1,0 +1,16 @@
+Executable              = /home/USER/Codes/MARLlib-master/condor-scripts/condor_mamujoco.sh
+Arguments               = $(cluster) $(process)
+# Arguments               = $(cluster) $(process)
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+Output                  = /ext_hdd/USER/condor_logs/$(cluster).$(process).out
+Log                     = /ext_hdd/USER/condor_logs//$(cluster).$(process).log
+Error                   = /ext_hdd/USER/condor_logs/$(cluster).$(process).err
+RequestCpus             = 4
+RequestMemory           = 15000
+getenv                  = True
+priority                = 1
+
+
+# machine name
+requirements = (Machine=="c04")
