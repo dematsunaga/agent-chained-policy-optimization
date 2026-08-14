@@ -10,6 +10,12 @@
 
 ACPO is a multi-agent reinforcement learning framework that extends MARLlib with agent-chained policy optimization algorithms. This repository supports training on RWARE, SMACv2, and MAMuJoCo environments using both Condor distributed computing and single GPU training.
 
+[Paper Link](https://arxiv.org/abs/2606.30072)
+
+Accepted at [RLC/RLJ 2026](https://rlj.cs.umass.edu/2026/papers/Paper137.html)
+
+
+
 ## Installation
 
 > **Note**: This framework is only compatible with Linux operating systems.
@@ -242,3 +248,14 @@ algo.fit(env, model,
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Citation
+```bibtex
+@article{matsunaga2026acpo,
+    title={ACPO: Agent-Chained Policy Optimization for Multi-Agent Reinforcement Learning},
+    author={Daiki E. Matsunaga and Junho Na and Tri Wahyu Guntara and Scott Sanner and Pascal Poupart and Jongmin Lee and Kee-Eung Kim},
+    journal={Reinforcement Learning Journal},
+    volume={7},
+    pages={},
+    year={2026}
+}
+```
